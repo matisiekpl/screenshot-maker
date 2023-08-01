@@ -3,10 +3,11 @@ package main
 import (
 	"embed"
 	_ "embed"
-	"github.com/sirupsen/logrus"
-	"github.com/urfave/cli/v2"
 	"image/png"
 	"os"
+
+	"github.com/sirupsen/logrus"
+	"github.com/urfave/cli/v2"
 )
 
 //go:embed font.ttf
@@ -22,7 +23,7 @@ func main() {
 		Flags: []cli.Flag{
 			&cli.StringFlag{
 				Name:  "device",
-				Value: "iphone-12",
+				Value: "iphone-11",
 				Usage: "device used as a mockup",
 			},
 			&cli.StringFlag{
